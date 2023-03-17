@@ -147,3 +147,15 @@ h1{
         padding: 3px;
     }
 }
+
+@media (max-width:852px){
+    .gallery-wrap .popup-image img{
+        width: 100%;
+        width: 580px;
+    }
+    h1{
+        font-size: 28px;
+        top: 16%;
+        margin: auto 33%;
+    }
+}
