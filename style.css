@@ -5,17 +5,23 @@
     box-sizing: border-box;
     }
 
+html{
+    height: 100%;
+}
+
 body{
-    background-image: linear-gradient(#8585ad, #293d3d, #8585ad);
-   /* background: #33334d;  */
+    background: linear-gradient(45deg, rgba(183,204,246,0.5),rgba(7,43,118,0.8));
+    background-size: cover;
+    background-position: center;
 }
 
 h1{
+    display: flex;
     position: absolute;
-    margin: auto 32%;
-    top: 15%;
+    margin: auto 35%;
+    top: 10%;
     z-index: 1;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding: 5px;
     font-size: 36px;
     color: #fff;
@@ -24,23 +30,18 @@ h1{
 
 #arleftBtn, #arrightBtn{
     width: 40px;
-    height: 40pxs;
+    height: 40px;
     cursor: pointer;
     margin: 30px;
 }
 
-#arleftBtn:hover{
+#arleftBtn:hover, #arrightBtn:hover{
     border-radius: 50%;
     box-shadow: 4px 4px 8px rgba(255, 0, 191, 0.6)
 }
 
-#arrightBtn:hover{
-    border-radius: 50%;
-    box-shadow: 4px 4px 6px rgba(255, 0, 191, 0.6)
-}
-
 .gallery{
-    width: 1000px;
+    width: 1100px;
     display: flex;
     overflow-x: scroll;
 }
@@ -69,7 +70,6 @@ h1{
 }
 
 .gallery-wrap{
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,12 +121,29 @@ h1{
 }
 
 @media (max-width:768px){
+    body{
+        margin:50% 0;
+    }
     .gallery-wrap .popup-image img{
        width: 95%;
+       width: 380px;
     }
     h1{
        font-size: 14px;
-       top: 5%;
-       margin: auto 24%;
+       top: 16%;
+       margin: auto 30%;
+    }
+    #arleftBtn, #arrightBtn{
+        width: 18px;
+        height: 18px;
+        margin: 5px;
+    }
+    .gallery{
+        width: 335x;
+    }
+    .gallery div{
+        grid-template-rows: auto;
+        grid-gap: 3px;
+        padding: 3px;
     }
 }
