@@ -24,19 +24,19 @@ arleftBtn.addEventListener("click", () => {
 
 document.querySelectorAll('.gallery img').forEach(image =>{
     image.onclick = () =>{
-        document.querySelector('.popup-image').style.display = 'block';
-        document.querySelector('.popup-image img').src = image.getAttribute('src');
+        document.querySelector('.popup_image').style.display = 'block';
+        document.querySelector('.popup_image img').src = image.getAttribute('src');
     }
 })
 
-document.querySelector('.popup-image span').onclick = () =>{
+document.querySelector('.popup_image span').onclick = () =>{
     document.querySelector('.popup-image').style.display = 'none';
 }
 
-const popupImage = document.querySelector('.popup-image');
+const popupImage = document.querySelector('.popup_image');
 
 document.addEventListener('click', function(e){
     if(e.target === popupImage){
-        document.querySelector('.popup-image').style.display = 'none';
+        document.querySelector('.popup_image').style.display = 'none';
     }
 })
