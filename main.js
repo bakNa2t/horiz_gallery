@@ -30,7 +30,7 @@ document.querySelectorAll('.gallery img').forEach(image =>{
 })
 
 document.querySelector('.popup_image span').onclick = () =>{
-    document.querySelector('.popup-image').style.display = 'none';
+    document.querySelector('.popup_image').style.display = 'none';
 }
 
 const popupImage = document.querySelector('.popup_image');
