@@ -7,11 +7,16 @@
 
 body{
     height: 100vh;
-    position: relative;
-    background-size: 200% 200%;
     background-position: center;
-    background: linear-gradient(45deg, rgba(183,204,246,0.65),rgba(166, 77, 255,0.65),rgba(7,43,118,0.8));
-    animation: colorbg 2s ease-in-out infinite;
+    background: linear-gradient(45deg, rgba(126,94,96,0.8),rgba(166, 77, 255,0.85),rgba(7,43,118,0.8));
+    background-size: 300% 300%;
+    animation: colorbg 8s ease-in-out infinite;
+}
+
+@keyframes colorbg{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 }
 
 .title_gallery {
@@ -121,12 +126,6 @@ body{
     border-radius: 5px;
     width: 750px;
     object-fit: cover;
-}
-
-@keyframes colorbg{
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
 }
 
 @media (max-width:1024px){
