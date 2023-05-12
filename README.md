@@ -6,4 +6,4 @@
 * images are expanded on click to a larger format (popup-image)
 * click here => [_**Scroll Image Gallery**_](https://bakna2t.github.io/gallery/)
 ___
-[![Gallery](./images/gallery.png)](https://bakna2t.github.io/gallery/){:target="_blank" rel="noopener"}
+[![Gallery](./images/gallery.png)](https://bakna2t.github.io/gallery/)
